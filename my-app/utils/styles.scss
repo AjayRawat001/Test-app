@@ -1,0 +1,194 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+// @import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';
+// @import '~bootstrap/scss/tables';
+// @import '~bootstrap/scss/forms';
+// @import '~bootstrap/scss/buttons';
+// @import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
+// @import '~bootstrap/scss/button-group';
+// @import '~bootstrap/scss/input-group';
+// @import '~bootstrap/scss/custom-forms';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+// @import '~bootstrap/scss/breadcrumb';
+// @import '~bootstrap/scss/pagination';
+@import '~bootstrap/scss/badge';
+// @import '~bootstrap/scss/jumbotron';
+@import '~bootstrap/scss/alert';
+// @import '~bootstrap/scss/progress';
+@import '~bootstrap/scss/media';
+// @import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/tooltip';
+@import '~bootstrap/scss/popover';
+// @import '~bootstrap/scss/carousel';
+// @import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/print';
+
+// @import 'styles.datepicker.scss';
+
+// Variables
+$enable-caret: false;
+
+body {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  font-weight: 600;
+}
+
+.navbar {
+  padding: 0;
+  border-bottom: 1px solid $gray-300;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.disable-scrollbars {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+
+  /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    /* Chrome/Safari/Webkit */
+  }
+}
+
+.signs {
+  .sign {
+    @include media-breakpoint-only(xl) {
+      height: 160px;
+    }
+
+    @include media-breakpoint-only(lg) {
+      // height: 200px;
+    }
+
+    @include media-breakpoint-only(md) {
+      // height: 157px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      // height: 140px;
+    }
+
+    @include media-breakpoint-only(xs) {
+      // height: 137px;
+    }
+  }
+}
+
+.horoscope {
+  .sign {
+    float: right;
+  }
+
+  .btn-toolbar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .nav-tabs {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.9em;
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+
+  @include media-breakpoint-only(md) {
+    column-count: 4;
+  }
+
+  @include media-breakpoint-only(sm) {
+    column-count: 3;
+  }
+
+  @include media-breakpoint-only(xs) {
+    column-count: 2;
+  }
+
+  .card {
+    border: none;
+  }
+
+  a {
+    color: $dark;
+
+    .display-2 {
+      font-weight: 400;
+    }
+  }
+}
+
+.display-1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.display-2 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.svg-inline--fa {
+  width: 18px;
+}
+
+.dropdown-toggle::after {
+  color: #dee2e6;
+}
+
+.loading {
+  position: relative;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
