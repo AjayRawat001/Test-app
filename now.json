@@ -6,7 +6,7 @@
     {
       "src": "/static/(.*)",
       "headers": { "cache-control": "s-maxage=604800" },
-      "dest": "/web/static/$1"
+      "dest": "/my-app/static/$1"
     },
    {
       "src": "(.*)",
