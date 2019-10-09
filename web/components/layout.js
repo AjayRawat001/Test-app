@@ -1,8 +1,7 @@
 import NextHead from 'next/head';
 import Link from 'next/link';
 import Headroom from 'react-headroom';
-import gql from 'graphql-tag';
-import '../utils/styles.scss';
+//import '../utils/styles.scss';
 
 
 const Layout = ({ children }) => {

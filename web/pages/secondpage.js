@@ -1,16 +1,16 @@
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import Link from 'next/link'
 import Router from 'next/router';
 
 const Secondpage =() => {
 
   return(
-      <Layout>
+      <div>
        <p>Welcome to the Second page</p>
       <Link href="/" as="/">
       <a>Home page</a>
     </Link> 
-  </Layout>
+    </div>
   )
   }
 
